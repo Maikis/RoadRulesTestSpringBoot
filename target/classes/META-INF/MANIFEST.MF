@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: road_rules_test
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: dm
+Built-By: maikdan
 Implementation-Vendor-Id: lt.roadrulestest
-Build-Jdk: 1.8.0_51
+Build-Jdk: 1.8.0_60
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
 
