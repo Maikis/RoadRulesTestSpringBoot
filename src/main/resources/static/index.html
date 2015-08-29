@@ -1,9 +1,70 @@
-<html>
+<html ng-app="rules-test">
 	<head>
 		<title>Road Rules Test Lithuania</title>
+		
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		
 	</head>
 	<body>
-		<div></div>
+		<div class="main-container">
+			<div class="header">
+				<div class="site-title">
+				<h1>roadrules4u.eu</h1>
+				</div>
+				<div class="navigation-container">
+					<ul>
+						<li>
+							Home
+						</li>
+						<li>
+							Test
+						</li>
+						<li>
+							Statistics
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="info-container">
+				<div class="desc-container">
+					<h3>Welcome</h3>
+					<p>You have just found a way to pass Lithuanian driving theory test by practicing just 30 minutes a day by yourself!</p>
+					<p>Our test is designed to work on your own, without spending a ton of money in the driving school or for licensed interpreter</p>
+					<p>We hope you will enjoy your path to the freedom of driving with us!</p>
+				</div><!--
+			 --><div class="login-container" ng-controller="LoginController">
+					<h3>Login to find out more!</h3>
+					<md-content md-theme="docs-dark" layout-padding layout="column" layout-sm="column">
+						<md-input-container>
+      						<label for="username">Username</label>
+     						<input id="username" ng-model="user.username" type="text" label="Username">
+    					</md-input-container>
+    					<md-input-container>
+      						<label for="password">Password</label>
+      						<input id="password" ng-model="user.password" type="password">
+    					</md-input-container>
+    				</md-content>
+    				<div class="login-button-div">
+    					<md-button class="md-raised md-primary">Login</md-button>
+    				</div>
+ 				</div>
+			</div>
+		</div>
+		
+		<!-- vendor stuff -->
+		<script src="vendor/angular/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-aria.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.10.1-rc5/angular-material.js"></script>
+		
+		<!-- My stuff -->
+		<script src="app/app.module.js"></script>
+		
+		<script src="app/login/login.module.js"></script>
+		<script src="app/login/login.controller.js"></script>
+		
 	</body>
 </html>
