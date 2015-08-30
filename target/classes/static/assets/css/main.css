@@ -16,6 +16,10 @@ h1 {
     text-shadow: 2px 2px #6D2D2D;
 }
 
+p {
+	text-align: justify;
+}
+
 .main-container {
 	width: 975px;
 	margin-left: auto;
@@ -28,10 +32,7 @@ h1 {
 
 .site-title {
     height: 100px;
-/*     background-color: #5A88B0; */
-/*     border-radius: 7px; */
-    /* box-shadow: 2px 2px 7px #888888; */
-    /* border: 1px solid #ccc; */
+
 }
 
 .navigation-container {
@@ -75,21 +76,40 @@ h1 {
 }
 
 .desc-container {
-        width: 534px;
+	width: 60%;
+}
+.desc-container div {
+	margin-right: 30px;
 }
 
 .login-container {
-    width: calc(100% - 550px);
-    border-left: 1px solid #ccc;
-    margin-left: 5px;
-    padding-left: 10px;
+    width: 40%;
+/*     border-left: 1px solid #ccc; */
+/*     margin-left: 5px; */
+/*     padding-left: 10px; */
     /* padding-left: 10px; */
     /* vertical-align: top; */
     min-height: 400px;
     /* background-color: red; */
 }
 
+.login-container > div {
+/* 	margin: 20px; */
+	border-left: 1px solid #ccc;
+    padding-left: 30px;
+}
+
 .login-button-div {
 	width: 30%;
 	float: right;
+	border-left: none;
+}
+
+a.md-button.md-primary.md-raised, a.md-button.md-primary.md-fab, .md-button.md-primary.md-raised, .md-button.md-primary.md-fab {
+    color: rgba(255,255,255,0.87);
+    background-color: #aaa;
+}
+
+a.md-button.md-primary.md-raised:not([disabled]):hover, a.md-button.md-primary.md-fab:not([disabled]):hover, .md-button.md-primary.md-raised:not([disabled]):hover, .md-button.md-primary.md-fab:not([disabled]):hover {
+    background-color: #999;
 }
