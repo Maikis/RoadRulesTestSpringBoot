@@ -3,7 +3,9 @@
 	
 	angular
 		.module('rules-test', [
-	                              
+	    /*ui-router*/
+	    'ui.router',
+	    
 	    /*modules*/
 	    'ngMaterial',
 	    'app.login'
