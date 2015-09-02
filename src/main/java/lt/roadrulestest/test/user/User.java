@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 public class User {
-	
+
 	@Id
 	@GeneratedValue
 	private Long id;
@@ -45,7 +45,8 @@ public class User {
 		this.surname = surname;
 		this.username = username;
 		this.email = email;
-		this.password = password;		
+		this.password = password;
+        this.dateJoined = new Date();
 	}
 
 	

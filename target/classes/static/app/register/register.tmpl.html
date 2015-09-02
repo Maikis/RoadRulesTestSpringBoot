@@ -2,7 +2,11 @@
 	<form name="registrationForm" novalidate>
 		<h3>Register</h3>
 		<br>
-		<div class="input-group input-group-sm">
+        <div ng-if="errorMsg" class="alert alert-danger" role="alert">
+            {{errorMsg}}
+        </div>
+
+        <div class="input-group input-group-sm">
 			<span class="input-group-addon" id="username">U</span>
 			<input name="username"
 					type="text" 
@@ -166,9 +170,10 @@
 			</div>
 		</div>
 		<div class="row login-container">
- 			<button class="btn btn-primary btn-float-right" 
+ 			<button class="btn btn-primary btn-float-right"
  					ng-disabled="registrationForm.$invalid 
- 						|| user.repassword != user.password">Register</button>
+ 						|| user.repassword != user.password"
+                    ng-click="saveUser()">Register</button>
 		</div>
  	</form>
 </div>

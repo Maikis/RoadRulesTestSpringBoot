@@ -7,6 +7,7 @@
 	    'ui.router',
 	    
 	    /*modules*/
+	    'app.common',
 	    'ngMaterial',
 	    'app.login',
 	    'app.register'
