@@ -45,12 +45,12 @@ p {
     background-image: url('../images/header2.JPG');
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: 2px solid #FF9238;
+    border-bottom: 2px solid #614229;
 }
 
 .navigation-container {
     /*     margin-top: 5px; */
-    background-color: #FF9238;
+    background-color: #614229;
     /* border-radius: 7px; */
     /* box-shadow: 2px 2px 7px #888888; */
     /* border: 1px solid #ccc; */
@@ -60,7 +60,7 @@ p {
     display: inline-block;
     color: #fff;
     font-weight: bold;
-    width: 83%;
+    width: 88%;
     padding-left: 80px;
     padding-bottom: 6px;
     font-size: 23px;
@@ -86,7 +86,7 @@ p {
 }
 
 .navigation-container li:hover {
-    background-color: #E49B5E;
+    background-color: #6B503A;
 }
 
 .navigation-container a {
@@ -169,26 +169,9 @@ p {
     padding-left: 35px;
 }
 
-/* Overriding default INPUT FIELD styles */
-
-/* a.md-button.md-primary.md-raised, a.md-button.md-primary.md-fab, */
-/* .md-button.md-primary.md-raised, .md-button.md-primary.md-fab { */
-/*     color: rgba(255,255,255,0.87); */
-/*     background-color: #aaa; */
-/* } */
-
-/* a.md-button.md-primary.md-raised:not([disabled]):hover, */
-/* a.md-button.md-primary.md-fab:not([disabled]):hover, */
-/* .md-button.md-primary.md-raised:not([disabled]):hover, */
-/* .md-button.md-primary.md-fab:not([disabled]):hover { */
-/*     background-color: #999; */
-/* } */
-
-/* md-input-container .md-input { */
-/*     color: rgba(0,0,0,0.87); */
-/*     border-color: rgba(255,146,56,0.5) !important; */
-/* } */
-
+.top-margin-20 {
+    margin-top: 20px;
+}
 
 
 

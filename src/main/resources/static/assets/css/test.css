@@ -1,0 +1,27 @@
+.test-question {
+    color: #777;
+    text-align: justify;
+}
+
+.test-picture {
+    width: 100%;
+    padding-top: 22px;
+}
+
+.test-answers {
+    padding-bottom: 30px;
+}
+
+.test-answers div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.test-curr-question {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 30px;
+    font-weight: bold;
+    color: #777;
+}
