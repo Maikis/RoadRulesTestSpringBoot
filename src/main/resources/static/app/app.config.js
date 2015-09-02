@@ -25,6 +25,14 @@
 				.state('login.register', {
 					url: "/register",
 					templateUrl: "app/register/register.tmpl.html"
+				})
+				.state('user', {
+					url: "/user",
+					templateUrl: "userPage.tmpl.html"
+				})
+				.state('user.testb', {
+					url: "/testb",
+					templateUrl: "app/testB/testB.tmpl.html"
 				});
 		});
 	
