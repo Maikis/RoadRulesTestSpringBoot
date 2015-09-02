@@ -1,0 +1,57 @@
+	<div ui-view class="col-sm-7 info-container">
+	</div><!--
+ --><div class="col-sm-5 login-container" data-ng-controller="LoginController">
+		<div class="row">
+			<form name="loginform" novalidate>
+				<div class="col-sm-10">
+					<h3>Login to find out more!</h3>
+					<br>
+					
+					<div class="input-group input-group-sm">
+						<span class="input-group-addon" id="luname">U</span>
+					  	<input name="username" 
+					  		type="text" 
+					  		class="form-control"
+					  		placeholder="Username" 
+					  		ng-maxlength="20" 
+					  		aria-describedby="sizing-addon3" 
+					  		data-ng-model="user.username" 
+					  		required>
+					</div>
+	    			<div ng-if="loginform.username.$dirty">
+						<div class="input-error-msg" ng-if="loginform.username.$error.maxlength">
+							Too many symbols
+						</div>
+						<div class="input-error-msg" ng-if="loginform.username.$error.required">
+							Field is required
+						</div>
+					</div>
+	      				
+					<br>
+					
+					<div class="input-group input-group-sm">
+						<span class="input-group-addon" id="lpassw">P</span>
+					  	<input name="password"
+					  			type="password"
+					  			class="form-control"
+					  			placeholder="Password" 
+					  			aria-describedby="sizing-addon3"
+					  			ng-model="user.password" 
+					  			required>
+					</div>
+					<div ng-if="loginform.password.$dirty">
+						<div class="input-error-msg" ng-if="loginform.password.$error.required">
+							Field is required
+						</div>
+					</div>
+	  			</div>
+	  			</div>
+	  			<div class="row login-container">
+	  				<div class="col-sm-10">
+		  				<span>Don't have an account yet? <a ui-sref="login.register">Register</a>.</span>
+		   				<button class="btn btn-primary btn-float-right" ng-disabled="loginform.$invalid" ng-click="login()">Login</button>
+		   			</div>
+ 			</div>
+ 		</form>
+	</div>
+</div>
