@@ -8,7 +8,8 @@
 	    
 	    /*modules*/
 	    'ngMaterial',
-	    'app.login'
+	    'app.login',
+	    'app.register'
 	                              
 		]);
 })(window.angular)

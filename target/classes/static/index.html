@@ -2,18 +2,14 @@
 	<head>
 		<title>Road Rules Test Lithuania</title>
 		
-<!-- 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-<!-- 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
-		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-		
 	</head>
-	<body>
-		<div ui-view class="main-container">
-			
-		</div>
+	<body onContextMenu="return false">
+		<div ui-view class="container"></div>
 		
 		<!-- vendor stuff -->
 		<script src="vendor/angular/angular.min.js"></script>
@@ -22,7 +18,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-aria.min.js"></script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.10.1-rc5/angular-material.js"></script>
     	<script src="vendor/ui-router/angular-ui-router.min.js"></script>
-<!--     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+    	<script src="vendor/jquery/jquery-1.11.3.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		
 		<!-- My stuff -->
 		<script src="app/app.module.js"></script>
@@ -31,5 +28,7 @@
 		<script src="app/login/login.module.js"></script>
 		<script src="app/login/login.controller.js"></script>
 		
+		<script src="app/register/register.module.js"></script>
+		<script src="app/register/register.controller.js"></script>
 	</body>
 </html>

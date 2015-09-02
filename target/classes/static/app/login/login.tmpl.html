@@ -1,28 +1,58 @@
-<div class="info-container">
-	<div class="desc-container">
-		<div>
-			<h3>Welcome</h3>
-			<p>You have just found a way to pass Lithuanian driving theory test by practicing just 30 minutes a day by yourself!</p>
-			<p>Our test is designed to work on your own, without spending a ton of money in the driving school or for licensed interpreter</p>
-			<p>We hope you will enjoy your path to the freedom of driving with us!</p>
-		</div>
+	<div ui-view class="col-sm-7 info-container">
+<!-- 		<data-ng-include src="'app/welcomeTmpl/welcome.tmpl.html'"></data-ng-include> -->
 	</div><!--
- --><div class="login-container" ng-controller="LoginController">
-		<div>
-			<h3>Login to find out more!</h3>
-			<md-content layout-padding layout="column" layout-sm="column">
-				<md-input-container>
-    				<label for="username">Username</label>
-   					<input id="username" ng-model="user.username" type="text" label="Username">
-  				</md-input-container>
-  				<md-input-container>
-    				<label for="password">Password</label>
-    				<input id="password" ng-model="user.password" type="password">
-  				</md-input-container>
-  			</md-content>
-  			<div class="login-button-div">
-  				<md-button class="md-raised md-primary">Login</md-button>
-  			</div>
- 		</div>
+ --><div class="col-sm-5 login-container" data-ng-controller="LoginController">
+		<div class="row">
+			<form name="loginform" novalidate>
+				<div class="col-sm-10">
+					<h3>Login to find out more!</h3>
+					<br>
+					
+					<div class="input-group input-group-sm">
+						<span class="input-group-addon" id="luname">U</span>
+					  	<input name="username" 
+					  		type="text" 
+					  		class="form-control"
+					  		placeholder="Username" 
+					  		ng-maxlength="20" 
+					  		aria-describedby="sizing-addon3" 
+					  		data-ng-model="user.username" 
+					  		required>
+					</div>
+	    			<div ng-if="loginform.username.$dirty">
+						<div class="input-error-msg" ng-if="loginform.username.$error.maxlength">
+							Too many symbols
+						</div>
+						<div class="input-error-msg" ng-if="loginform.username.$error.required">
+							Field is required
+						</div>
+					</div>
+	      				
+					<br>
+					
+					<div class="input-group input-group-sm">
+						<span class="input-group-addon" id="lpassw">P</span>
+					  	<input name="password"
+					  			type="password"
+					  			class="form-control"
+					  			placeholder="Password" 
+					  			aria-describedby="sizing-addon3"
+					  			ng-model="user.password" 
+					  			required>
+					</div>
+					<div ng-if="loginform.password.$dirty">
+						<div class="input-error-msg" ng-if="loginform.password.$error.required">
+							Field is required
+						</div>
+					</div>
+	  			</div>
+	  			</div>
+	  			<div class="row login-container">
+	  				<div class="col-sm-10">
+		  				<span>Don't have an account yet? <a ui-sref="login.register">Register</a>.</span>
+		   				<button class="btn btn-primary btn-float-right" ng-disabled="loginform.$invalid" ng-click="login()">Login</button>
+		   			</div>
+ 			</div>
+ 		</form>
 	</div>
 </div>

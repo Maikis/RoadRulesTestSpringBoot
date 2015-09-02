@@ -9,8 +9,14 @@
 	
 	function LoginController($scope) {
 		$scope.user = {
-				username: 'JohnSmith',
-				password: 'xxxxxxx'
+				username: '',
+				password: ''
+		}
+		
+		$scope.login = login;
+		
+		function login () {
+
 		}
 	}
 })(window.angular)
